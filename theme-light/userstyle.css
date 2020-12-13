@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* 用 UTF-8 字符集 */
+
+/* For styling the rendered Markdown */
+/* Styling for White Theme */
+
+/* Colors for different mark tags */
+/* ==mark== */
+mark {
+/*	High light 背景色轉做 greenyellow，文字色轉做黑 */
+	background-color: greenyellow;
+	color: black !important;
+	font-style: normal !important;
+}
+
+italic, i, em {
+	background-color: greenyellow;
+	color: black !important;
+	font-style: normal !important;
+}
+
+/* link */
+a {
+	background-color: #FAFAD2;
+	color: indigo !important;
+}

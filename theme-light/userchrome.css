@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/* 用 UTF-8 字符集 */
+
+/* For styling the entire Joplin app (except the rendered Markdown, which is defined in `userstyle.css`) */
+/* Styling for Light Theme */
+
+/* Synchronize button */
+/* Add rounded corners */
+div.side-bar > div > button {
+    border-radius: 16px !important;
+}
+
+/* Outline colour change on hover */
+div.side-bar > div > button:hover {
+	border: 1px solid #3B74DF !important;
+	border-radius: 16px !important;
+}
+
+/* Prevent button text color changing on hover */
+	div.side-bar > div > button > span {
+	color: #FFFFFF !important;
+}
+
+
+/* CodeMirror editor */
+div.CodeMirror-lines * {
+    font-family: Arial, sans-serif;
+}
+
+/* changes the font colour for the editor text */
+span[role="presentation"] {
+    color: black;
+}
+
+/* changes the font colour for header */
+.cm-header.cm-header-1,
+.cm-header.cm-header-2,
+.cm-header.cm-header-3,
+.cm-header.cm-header-4,
+.cm-header.cm-header-5,
+.cm-header.cm-header-6 {
+  color: #32373F;
+}
+
+/* changes the style for strong in editor, **Text** */
+.cm-strong {
+	color: black !important;
+	font-weight: bold;
+}
+
+/* changes the style for italics in editor, _Text_ */
+/* Use as high lighter because <mark> command not yet support in editor view */
+.cm-em {
+	background-color: greenyellow;
+	color: black !important;
+	font-style: normal !important;
+}
+
+/* changes the style for text in brackets [ ] in editor, [ Text ] */
+.cm-link-text {
+	color: indigo !important;
+	font-weight: bold;	
+	background-color: #FAFAD2;
+	text-decoration-line: underline;
+	text-decoration-color: indigo;
+}
+
+/* changes the style for text / link in parens ( ) in editor, ( Text ) */
+.cm-string.cm-url  {
+	color: indigo !important;
+	background-color: #E0FFFF;
+}
+
+/* changes the style for checkbox [ ] in editor, [ ] */
+/* same visual style as .cm-link-text */
+.cm-meta {
+	color: indigo !important;
+	background-color: #FAFAD2;
+}
+
+/* changes the style for checked checkbox [x] in editor, [x] */
+/* same visual style as .cm-link-text */
+.cm-property {
+	color: indigo !important;
+	background-color: #FAFAD2;
+}
+
+/* changes the style for list elements and checkbox elements in editor */
+.cm-variable-2, .cm-variable-3, .cm-keyword {
+	color: deepskyblue; !important;
+}
+
+/* changes the style for quoted text in editor, > */
+.cm-quote.cm-quote-1 {
+/*  margin: 10px 10px; */
+/*  padding: 0.5em 10px; */
+    color: #8b92fd;
+}
+
+/* changes the style for code text in editor, `Code`, ```Code``` */
+.cm-comment {
+    color: DarkGrey !important;
+}
+
+/* changes the font colour for the "!" before displayed image links */
+.cm-image-marker {
+    color: red;
+    font-weight: 900;
+}
+
+/* changes the font colour for horizontal rule in editor, --- */
+.cm-hr {
+    color: DarkGrey !important;
+    font-weight: 900;
+}
+
+/* Remove ligatures from editor */
+.CodeMirror * {
+    font-variant-ligatures: none;
+}
+
+
