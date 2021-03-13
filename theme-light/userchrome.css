@@ -1,8 +1,33 @@
-@charset "UTF-8";
-/* 用 UTF-8 字符集 */
-
 /* For styling the entire Joplin app (except the rendered Markdown, which is defined in `userstyle.css`) */
 /* Styling for Light Theme */
+/* Test on Joplin 1.7.11 */
+
+/********************************************************************
+ *  DISABLING UI ELEMENTS
+ Reference from https://github.com/benji300/joplin-wanaka-ui/
+ *******************************************************************/
+
+/* TWEAK: Show/hide "All notes" icon in side-bar (comment out to show) */
+i.icon-notes {
+  display: none !important;
+}
+  
+/* TWEAK: Show/hide "Spell checker" icon in toolbar (comment out to show) */
+a[title="Spell checker"] {
+/*  display: none !important; */
+}
+
+/* TWEAK: Show/hide "WYSIWYG button" icon in toolbar (comment out to show) */
+div.editor-toolbar > div:nth-child(3) > button.tox-tbtn {
+  display: none !important;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/********************************************************************
+ *  Side-bar
+ *******************************************************************/
+
 
 /* Synchronize button */
 /* Add rounded corners */
@@ -21,10 +46,13 @@ div.side-bar > div > button:hover {
 	color: #FFFFFF !important;
 }
 
+/********************************************************************
+ *  Code Mirror
+ *******************************************************************/
 
 /* CodeMirror editor */
-div.CodeMirror-lines * {
-    font-family: Arial, sans-serif;
+.CodeMirror {
+  font-family: Arial, sans-serif;
 }
 
 /* changes the font colour for the editor text */
